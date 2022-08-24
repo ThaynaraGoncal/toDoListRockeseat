@@ -1,0 +1,109 @@
+.container {
+  margin: auto;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentAddTask {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: -1.85rem;
+}
+
+.contentAddTask input {
+  width: 100%;
+  margin-right: 0.50rem;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-500);
+  outline: none;
+  color: var(--gray-100);
+}
+
+.contentListTasks {
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerList {
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.headerList p {
+  color: var(--blue);
+}
+
+.headerList p + p {
+  color: var(--purple);
+}
+
+.headerList p button {
+  width: 25px;
+  height: 22px;
+  background: var(--gray-400);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.tasks {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.tasksEmpty {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  margin-top: 1.5rem;
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+}
+
+.tasksEmpty img {
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.tasksEmpty img + p {
+  font-weight: bold;
+}
+
+.btnAdd {
+  width: 7rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.btnAdd:hover{
+  background: var(--blue);
+}
+
+.btnAdd p {
+  font-weight: bold;
+  margin: 0.3rem;
+  font-size: 0.875rem;
+}

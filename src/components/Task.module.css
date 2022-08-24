@@ -1,0 +1,74 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--gray-400);
+  margin-bottom: 0.75rem;
+}
+
+.btnTrash {
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.btnTrash:hover {
+  color: var(--danger);
+}
+
+.taskDescription {
+  display: flex;
+  align-items: center;
+}
+
+.btnUnChecked {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--blue);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.btnUnChecked:hover {
+  background: var(--gray-400);
+}
+
+.btnChecked {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--purple-dark);
+  background: var(--purple-dark);
+  cursor: pointer;
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+  transition: background-color 0.1s;
+}
+
+.btnChecked:hover {
+  background: var(--purple);
+}
+
+.taskUnchecked {
+  margin: 0.312rem;
+  color: var(--gray-100);
+}
+
+.taskChecked {
+  margin: 0.312rem;
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
